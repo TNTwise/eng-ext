@@ -20,6 +20,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
         with:
+          token: ${{ secrets.GH_TOKEN }}
           path: "src"
 
       - name: Checkout builds
@@ -27,6 +28,7 @@ jobs:
         with:
           ref: "builds"
           path: "builds"
+          token: ${{ secrets.GH_TOKEN }}
       
       - name: Clean old builds
         run: rm $GITHUB_WORKSPACE/builds/*.cs3 || true
