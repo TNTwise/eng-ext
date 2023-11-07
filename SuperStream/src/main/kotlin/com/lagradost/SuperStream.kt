@@ -205,7 +205,7 @@ class SuperStream : MainAPI() {
             "medium" to "Website&token$token"
         )
 
-        val url = if (useAlternativeApi) secondApiUrl else apiUrl
+        val url = apiUrl
         return app.post(url, headers = headers, data = data, timeout = timeout)
     }
 
@@ -254,12 +254,12 @@ class SuperStream : MainAPI() {
 
     private val baseApiUrl = base64Decode("aHR0cHM6Ly9zaG93Ym94LnNoZWd1Lm5ldA==")
     private val apiUrl =
-        "$baseApiUrl${base64Decode("L2FwaS9hcGlfY2xpZW50L2luZGV4Lw==")}"
+        base64Decode("aHR0cHM6Ly9zaG93Ym94LnNoZWd1Lm5ldC9hcGkvYXBpX2NsaWVudC9pbmRleC8=")
 
     // Another url because the first one sucks at searching
     // This one was revealed to me in a dream
     private val secondApiUrl =
-        base64Decode("aHR0cHM6Ly9tYnBhcGkuc2hlZ3UubmV0L2FwaS9hcGlfY2xpZW50L2luZGV4Lw==")
+        base64Decode("aHR0cHM6Ly9zaG93Ym94LnNoZWd1Lm5ldC9hcGkvYXBpX2NsaWVudC9pbmRleC8=")
 
     private val appKey = base64Decode("bW92aWVib3g=")
     private val appId = base64Decode("Y29tLnRkby5zaG93Ym94")
