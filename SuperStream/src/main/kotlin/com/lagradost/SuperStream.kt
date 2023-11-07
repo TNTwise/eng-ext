@@ -205,13 +205,13 @@ class SuperStream : MainAPI() {
             "medium" to "Website&token$token"
         )
 
-        val url = if (useAlternativeApi) secondApiUrl else apiUrl
+
         return app.post(url, headers = headers, data = data, timeout = timeout)
     }
 
     private suspend inline fun <reified T : Any> queryApiParsed(
         query: String,
-        useAlternativeApi: Boolean = true
+        useAlternativeApi: Boolean = false
     ): T {
         return queryApi(query, useAlternativeApi).parsed()
     }
