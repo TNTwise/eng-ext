@@ -211,7 +211,7 @@ class SuperStream : MainAPI() {
 
     private suspend inline fun <reified T : Any> queryApiParsed(
         query: String,
-        useAlternativeApi: Boolean = true
+        useAlternativeApi: Boolean = false
     ): T {
         return queryApi(query, useAlternativeApi).parsed()
     }
