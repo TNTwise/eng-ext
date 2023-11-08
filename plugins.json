@@ -1,0 +1,45 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.2embed.to&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/TNTwise/eng-ext",
+        "fileSize": 61521,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "Anime",
+            "AnimeMovie"
+        ],
+        "version": 16,
+        "internalName": "SflixProvider",
+        "description": "Due to the video host changing encryption methods extremely often these extensions might not work perfectly. Also includes Dopebox, Solarmovie, Zoro, HDToday and 2embed",
+        "url": "https://raw.githubusercontent.com/TNTwise/eng-ext/builds/SflixProvider.cs3",
+        "name": "SflixProvider"
+    },
+    {
+        "iconUrl": "https://raw.githubusercontent.com/recloudstream/cloudstream-extensions/master/SuperStream/icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/TNTwise/eng-ext",
+        "fileSize": 55568,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Blatzar"
+        ],
+        "tvTypes": [
+            "Anime",
+            "Movie",
+            "AnimeMovie",
+            "TvSeries"
+        ],
+        "version": 9,
+        "internalName": "SuperStream",
+        "url": "https://raw.githubusercontent.com/TNTwise/eng-ext/builds/SuperStream.cs3",
+        "name": "SuperStream"
+    }
+]

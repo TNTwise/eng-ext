@@ -1,0 +1,8 @@
+{
+    "name": "tntwise eng providers repository",
+    "description": "eng Repository",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/TNTwise/eng-ext/builds/plugins.json"
+    ]
+  }
